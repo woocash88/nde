@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eliminacje do Drużyny Narodowej 2024</title>
+    <style>
+        body {
+            margin: auto
+            overflow-x: hidden;
+            overflow-y: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make body full height of viewport */
+        }
+
+        #video-background {
+ 
+	  position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1000;
+	    background:url("/gfx/bg_tlo.gif") repeat scroll center top #111111;
+
+        }
+
+        .content {
+            position: relative;
+            z-index: 1000;
+            padding: 50px;
+            color: #fff;
+            font-family: 'Calibri Bold', sans-serif;
+            font-variant: small-caps; 
+            text-align: center; /* Center text content */
+        }
+
+        h1 {
+            font-size: 2em;
+            line-height: 1;
+        }
+
+        p {
+            font-size: 2.5em;
+            line-height: 0.3;
+            text-align: center; /* Center the paragraph */
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center horizontally */
+        }
+
+        .header img {
+            margin-left: 0px;
+            margin-top: -20px; 
+            margin-right: 50px;
+        }
+
+        .logo1 {
+            width: auto; /* Adjust the width of the first image as needed */
+            height: 100px; /* Maintain the aspect ratio */
+        }
+
+        .logo2 {
+            width: auto;
+            height: 150px; 
+        }
+
+        .logo3 {
+            width: auto;
+            height: 80px; 
+        }
+
+        .logo4 {
+            width: auto;
+            height: 80px; 
+        }
+
+        p img {
+            width: 400px;
+            margin-left: 400px;
+            margin-right: 100px;
+        }
+
+        iframe {
+            margin: 0 auto; /* Center horizontally */
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="https://i.imgur.com/1HpqM4f.mp4" type="video/mp4"> <!-- Replace 'your-video.mp4' with the actual filename of your video -->
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <div class="header">
+            <img class="logo1" src="https://i.imgur.com/IDMmheT.png" alt="Header Logo 1"> 
+            <img class="logo2" src="https://i.imgur.com/KPVV3rq.png" alt="Header Logo 2">
+            <img class="logo3" src="https://i.imgur.com/Jvdc45I.png" alt="Header Logo 2">
+            <img class="logo4" src="https://i.imgur.com/TE35F3G.png" alt="Header Logo 3"> 
+        </div>
+        <p>
+            Eliminacje do Narodowej Drużyny Esportu 2024
+        </p>
+        <iframe src="https://challonge.com/wec24polska/module" width="100%" height="600" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+    </div>
+</body>
+</html>
