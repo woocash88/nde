@@ -6,21 +6,21 @@
   <title>Sklep Dota2Inhouse</title>
 <style>
   body {
-    font-family: 'Arial', sans-serif;
+    font-family: "Bahnschrift", Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #ffffff;
   }
 
   .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 20px auto;
     text-align: center;
     position: relative;
   }
 
   .header {
-    background-color: #007bff;
+    background: linear-gradient(to right, #ad0014, #ffffff); 
     color: #FF2D00;
     padding: 10px;
     border-radius: 10px;
@@ -43,7 +43,10 @@ margin-top: 15px;
     color: #fff; /* White text color */
     padding: 10px;
     border-radius: 5px;
-    font-size: 16px;
+font-weight: bold;
+font-family: "Bahnschrift", Arial, sans-serif;
+font-variant: small-caps;
+    font-size: 22px;
     margin-bottom: 0px;
     text-align: left;
     z-index: 1;
@@ -64,7 +67,7 @@ margin-top: 15px;
   .input-container label.input-label {
     font-family: Arial, sans-serif; /* Change the font family as needed */
     font-size: 12px; /* Adjust the font size as needed */
- text-align: center;
+    text-align: center;
   }
 
   .grid-container {
@@ -77,7 +80,7 @@ margin-top: 15px;
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
     position: relative;
   }
@@ -102,7 +105,9 @@ margin-top: 15px;
     margin-top: 0px;
     margin-bottom: 5px;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #ad0014;
+
+font-family: "Bahnschrift", Arial, sans-serif;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -111,7 +116,8 @@ margin-top: 15px;
   }
 
   .add-button:hover, .remove-button:hover {
-    background-color: #0056b3;
+    background-color: #ed8591;
+color: #000000;
   }
 
   .popup {
@@ -157,8 +163,7 @@ margin-top: 15px;
   }
 
 .button-text {
-    font-size: 12px; /* Adjust the font size as needed */
-
+    font-size: 14px; /* Adjust the font size as needed */
 }
 
 .product-image-container:hover {
@@ -167,12 +172,13 @@ margin-top: 15px;
 
 .button-text2 {
     font-size: 14px; /* Adjust the font size as needed */
-  font-weight: bold;
+   font-weight: bold;
 }
   .generate-order-button {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #ad0014;
+font-family: "Bahnschrift", Arial, sans-serif;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -181,7 +187,7 @@ margin-top: 15px;
   }
 
   .generate-order-button:hover {
-    background-color: #0056b3;
+    background-color: #59030d;
   }
 
  .basket-items {
@@ -191,20 +197,29 @@ margin-top: 15px;
  color: #000000;
     }
 
-  .show-basket-button {
-    background-color: #6300FF;
-    color: #fff;
+.show-basket-button {
+    background-color: #ffffff;
+    color: #000000;
     padding: 5px 10px;
-    border: none;
+    border: 1px solid transparent; /* Initially set the border to transparent */
     border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
+    transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; /* Include border-color in transition */
+    font-family: "Bahnschrift", Arial, sans-serif;
+    font-variant: small-caps;
+    font-size: 20px;
+    /* Add emboss effect */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3); /* Apply shadow to the top */
+}
 
-  .show-basket-button:hover {
-    background-color: #0056b3;
-    color: #87FF0E;
-  }
+.show-basket-button:hover {
+    background-color: #ed8591;
+    color: #000000;
+    /* Adjust hover effect for embossed buttons */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Reduce shadow on hover */
+}
+
+
 
 .enlarged-image-popup {
     display: none;
@@ -218,12 +233,13 @@ margin-top: 15px;
 }
 
 .enlarged-image-container {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    max-width: 800px; /* Maximum width of the enlarged image */
+    width: 90vh; /* Set the width to 1000px */
     height: auto; /* Allow height to adjust according to image aspect ratio */
+    max-height: 90vh; /* Set maximum height to 80% of viewport height */
     box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.5);
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -299,23 +315,43 @@ margin-top: 15px;
   background-color: rgba(255, 255, 255, 1); /* Change the background color on hover */
 }
 
+.additional-container {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin-top: 20px; /* Add space between the grid and the container */
+  font-size: 8px; /* Adjust the font size as needed */
+  color: #4a4a4a; /* Set the text color */
+  height: 40px; /* Set a fixed height for the container */
+  background-color: #fff; /* Set the background color */
+  border-radius: 10px; /* Add rounded corners to the container */
+}
+
+.additional-container p {
+  margin: 0; /* Remove default margins */
+}
+
+
 </style>
 </head>
 <body>
   <div class="container">
     <div class="image-container">
-      <img src="https://i.imgur.com/jeEGhur.png" style="width: 100%; max-width: 1000px;">
+      <img src="https://i.imgur.com/jeEGhur.png" style="width: 100%; max-width: 1200px;">
     </div>
     <div class="header">
       <div class="basket-summary-container">
         <div class="basket-summary" id="basketSummary"> Suma: 20 PLN (koszt wysyłki 20 PLN)</div>
       </div>
       <div class="show-basket-container">
-        <button class="show-basket-button" onclick="showBasket()">Zobacz koszyk</button>
+        <button class="show-basket-button" onclick="showBasket()">Zobacz koszyk 🛒</button>
       </div>
     </div>
     <div class="grid-container" id="gridContainer"></div>
     <div class="popup-overlay" id="popupOverlay"></div>
+<div class="additional-container">
+  <p>Polish Dota2 Inhouse</p>
+</div>
     
 <div class="popup" id="popup">
       <h2>Podsumowanie koszyka</h2>
@@ -337,7 +373,7 @@ margin-top: 15px;
       <label class="input-label" for="commentInput">Komentarz:</label>
       <input class="input-field" type="text" id="commentInput">
       </div>
-   <button class="generate-order-button" onclick="generateOrder()">Pobierz plik z zamówieniem</button>
+   <button class="generate-order-button" onclick="generateOrder()">Pobierz plik .txt z zamówieniem</button>
   <button onclick="hideBasket()">Zamknij</button>
 <p class="button-text">Pobrany plik .txt wyślij mailem na:</p>
 <p class="button-text2">polishdota2inhouse@gmail.com</p>
@@ -417,7 +453,7 @@ margin-top: 15px;
         basket.forEach(item => {
           const listItem = document.createElement('li');
           listItem.className = 'basket-item';
-          listItem.innerHTML = `${itemNumber}. ${item.name} - $${item.price} x ${item.quantity}
+          listItem.innerHTML = `${itemNumber}. ${item.name} - ${item.price} PLN x ${item.quantity}
             <button class="remove-button remove-item-button" onclick="removeItemFromBreakdown('${item.name}')">X</button>`;
           basketItemsContainer.appendChild(listItem);
           itemNumber++;
